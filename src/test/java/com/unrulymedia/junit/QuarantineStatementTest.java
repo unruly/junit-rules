@@ -16,7 +16,7 @@ import static com.unrulymedia.junit.QuarantineRule.QuarantinedStatement;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class QuarantineStatementTestito {
+public class QuarantineStatementTest {
 
     QuarantinedStatement quarantineStatement;
 
@@ -60,7 +60,7 @@ public class QuarantineStatementTestito {
     @Before
     public void setup() throws SecurityException, NoSuchMethodException {
         quarantineStatement = new QuarantinedStatement(mockStatement, mockDescription, 2, mockLogger);
-        Mockito.<Class<?>>when(mockDescription.getTestClass()).thenReturn(QuarantineStatementTestito.class);
+        Mockito.<Class<?>>when(mockDescription.getTestClass()).thenReturn(QuarantineStatementTest.class);
         when(mockDescription.getMethodName()).thenReturn("MethodName");
     }
 
