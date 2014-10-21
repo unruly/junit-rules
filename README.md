@@ -1,6 +1,8 @@
 junit-rules
 ===========
 
+[![Build Status](https://travis-ci.org/unruly/junit-rules.svg?branch=master)](https://travis-ci.org/unruly/junit-rules)
+
 A collection of useful JUnit rules from Unruly's codebases
 
 ## Ignore tests until a certain date.
