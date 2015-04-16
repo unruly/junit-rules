@@ -1,6 +1,6 @@
-package com.unrulymedia.junit;
+package co.unruly.junit;
 
-import com.unrulymedia.junit.annotations.IgnoreUntil;
+import co.unruly.junit.annotations.IgnoreUntil;
 import org.joda.time.DateTime;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;

@@ -1,4 +1,4 @@
-package com.unrulymedia.junit;
+package co.unruly.junit;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +12,7 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
 
-import static com.unrulymedia.junit.QuarantineRule.QuarantinedStatement;
+import static co.unruly.junit.QuarantineRule.QuarantinedStatement;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)

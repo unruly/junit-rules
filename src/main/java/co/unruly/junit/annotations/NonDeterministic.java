@@ -1,4 +1,4 @@
-package com.unrulymedia.junit.annotations;
+package co.unruly.junit.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

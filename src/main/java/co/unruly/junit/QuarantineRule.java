@@ -1,6 +1,6 @@
-package com.unrulymedia.junit;
+package co.unruly.junit;
 
-import com.unrulymedia.junit.annotations.NonDeterministic;
+import co.unruly.junit.annotations.NonDeterministic;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;

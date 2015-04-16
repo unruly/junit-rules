@@ -1,4 +1,4 @@
-package com.unrulymedia.junit;
+package co.unruly.junit;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;

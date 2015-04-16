@@ -1,6 +1,6 @@
-package com.unrulymedia.junit;
+package co.unruly.junit;
 
-import com.unrulymedia.junit.annotations.IgnoreUntil;
+import co.unruly.junit.annotations.IgnoreUntil;
 import org.joda.time.DateTime;
 import org.junit.Test;
 import org.junit.runner.Description;
@@ -10,7 +10,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static com.unrulymedia.junit.IgnoreUntilRule.AlwaysPassesStatement;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.when;
@@ -49,6 +48,6 @@ public class IgnoreUntilRuleTest {
         when(mockDescription.getAnnotation(IgnoreUntil.class)).thenReturn(mockIgnoreUntilAnnotation);
         when(mockIgnoreUntilAnnotation.value()).thenReturn(tomorrow);
 
-        assertTrue(rule.apply(mockStatement, mockDescription) instanceof AlwaysPassesStatement);
+        assertTrue(rule.apply(mockStatement, mockDescription) instanceof IgnoreUntilRule.AlwaysPassesStatement);
     }
 }
