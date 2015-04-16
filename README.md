@@ -5,6 +5,16 @@ junit-rules
 
 A collection of useful JUnit rules from Unruly's codebases
 
+## Install from Maven Central
+
+```xml
+<dependency>
+    <groupId>co.unruly</groupId>
+    <artifactId>junit-rules</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
 ## Ignore tests until a certain date.
 
 This allows you to write an acceptance/integration test before implementing a feature, and integrate it into your codebase before the implementation is complete.
