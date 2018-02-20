@@ -15,7 +15,7 @@ A collection of useful JUnit rules from Unruly's codebases
 </dependency>
 ```
 
-## Ignore tests until a certain date.
+## Ignore tests until a certain date or datetime.
 
 This allows you to write an acceptance/integration test before implementing a feature, and integrate it into your codebase before the implementation is complete.
 
@@ -26,6 +26,12 @@ IgnoreUntilRule rule = new IgnoreUntilRule();
 @IgnoreUntil("2014-10-30")
 @Test
 public void example_test_ignored_until_a_date() {
+
+}
+
+@IgnoreUntil("2014-10-30T17:30:00")
+@Test
+public void example_test_ignored_until_a_datetime() {
 
 }
 ```
