@@ -73,6 +73,12 @@ public class MyIgnorableTest {
     public void notIgnored() {
     }
 }
+
+@IgnoreUntil("2014-10-30T17:30:00")
+@Test
+public void example_test_ignored_until_a_datetime() {
+
+}
 ```
 
 ## Quarantine non-deterministic tests
