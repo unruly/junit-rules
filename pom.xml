@@ -13,8 +13,8 @@
     <url>https://github.com/unruly/junit-rules</url>
 
     <properties>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <additionalparam>-Xdoclint:none</additionalparam>
     </properties>
