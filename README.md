@@ -42,7 +42,7 @@ public class MyIgnorableTest {
 
     @IgnoreUntil("2014-10-30")
     @Test
-    public void ignoredUntil20180101() {
+    public void ignoredUntil20141030() {
     }
 
     @IgnoreUntil("2014-10-30T17:30:00")
@@ -72,12 +72,6 @@ public class MyIgnorableTest {
     @Test
     public void notIgnored() {
     }
-}
-
-@IgnoreUntil("2014-10-30T17:30:00")
-@Test
-public void example_test_ignored_until_a_datetime() {
-
 }
 ```
 
