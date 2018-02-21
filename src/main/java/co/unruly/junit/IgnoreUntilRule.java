@@ -13,13 +13,14 @@ public class IgnoreUntilRule implements TestRule {
 
     private static final Pattern DATE_REGEX =     Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
     private static final Pattern DATETIME_REGEX = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}");
+    static final String DEFAULT_IGNORE = "2000-01-01";
 
     @Override
     public Statement apply(Statement base, Description description) {
 
         IgnoreUntil ignoreUntil = description.getAnnotation(IgnoreUntil.class);
 
-        if (ignoreUntil != null && description.getTestClass() != null) {
+        if (ignoreUntil != null && ignoreUntil.value().equals(DEFAULT_IGNORE) && description.getTestClass() != null) {
             ignoreUntil = description.getTestClass().getAnnotation(IgnoreUntil.class);
         }
 

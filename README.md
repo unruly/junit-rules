@@ -19,14 +19,59 @@ A collection of useful JUnit rules from Unruly's codebases
 
 This allows you to write an acceptance/integration test before implementing a feature, and integrate it into your codebase before the implementation is complete.
 
+`@IgnoreUntil` must be present on the test method you wish to ignore. 
+
+The date/datetime value of the class level annotation can be shared across methods in the class or overridden by the method annotation.
+
 ```java
-@Rule
-IgnoreUntilRule rule = new IgnoreUntilRule();
 
-@IgnoreUntil("2014-10-30")
-@Test
-public void example_test_ignored_until_a_date() {
+@IgnoreUntil("2099-01-01")
+public class MyIgnorableTest {
 
+    @Rule public IgnoreUntilRule rule = new IgnoreUntilRule();
+
+    @IgnoreUntil
+    @Test
+    public void ignoredUntil20990101() {
+    }
+
+    @IgnoreUntil
+    @Test
+    public void alsoIgnoredUntil20990101() {
+    }
+
+    @IgnoreUntil("2014-10-30")
+    @Test
+    public void ignoredUntil20180101() {
+    }
+
+    @IgnoreUntil("2014-10-30T17:30:00")
+    @Test
+    public void ignoredUntil20141030T173000() {
+    }
+
+    @Test
+    public void notIgnored() {
+    }
+}
+```
+
+The class annotation is optional, you can just annotate the method.
+
+```java
+
+public class MyIgnorableTest {
+
+    @Rule public IgnoreUntilRule rule = new IgnoreUntilRule();
+
+    @IgnoreUntil("2014-10-30T17:30:00")
+    @Test
+    public void ignoredUntil20141030T173000() {
+    }
+
+    @Test
+    public void notIgnored() {
+    }
 }
 
 @IgnoreUntil("2014-10-30T17:30:00")
