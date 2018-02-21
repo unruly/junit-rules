@@ -32,22 +32,22 @@ public class MyIgnorableTest {
 
     @IgnoreUntil
     @Test
-    public void ignoredUntil2099-01-01() {
+    public void ignoredUntil20990101() {
     }
 
     @IgnoreUntil
     @Test
-    public void alsoIgnoredUntil2099-01-01() {
+    public void alsoIgnoredUntil20990101() {
     }
 
     @IgnoreUntil("2014-10-30")
     @Test
-    public void ignoredUntil2018-01-01() {
+    public void ignoredUntil20180101() {
     }
 
     @IgnoreUntil("2014-10-30T17:30:00")
     @Test
-    public void ignoredUntil2014-10-30T17:30:00() {
+    public void ignoredUntil20141030T173000() {
     }
 
     @Test
@@ -66,7 +66,7 @@ public class MyIgnorableTest {
 
     @IgnoreUntil("2014-10-30T17:30:00")
     @Test
-    public void ignoredUntil2014-10-30T17:30:00() {
+    public void ignoredUntil20141030T173000() {
     }
 
     @Test

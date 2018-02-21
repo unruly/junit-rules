@@ -14,7 +14,6 @@ public class IgnoreUntilRule implements TestRule {
     static final String DEFAULT_IGNORE = "2000-01-01";
     private static final Pattern DATE_REGEX =     Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
     private static final Pattern DATETIME_REGEX = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}");
-    static final String DEFAULT_IGNORE = "2000-01-01";
 
     @Override
     public Statement apply(Statement base, Description description) {
