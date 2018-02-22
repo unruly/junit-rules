@@ -11,7 +11,7 @@ A collection of useful JUnit rules from Unruly's codebases
 <dependency>
     <groupId>co.unruly</groupId>
     <artifactId>junit-rules</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
