@@ -4,7 +4,7 @@
 
     <groupId>co.unruly</groupId>
     <artifactId>junit-rules</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
 
     <name>junit-rules</name>
 
@@ -37,7 +37,7 @@
         <connection>scm:git:git@github.com:unruly/${project.artifactId}.git</connection>
         <developerConnection>scm:git:git@github.com:unruly/${project.artifactId}.git</developerConnection>
         <url>git@github.com:unruly/${project.artifactId}.git</url>
-        <tag>HEAD</tag>
+        <tag>junit-rules-1.1</tag>
     </scm>
 
     <dependencies>
